@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./login.css"
 
 export default function Register (props) {
@@ -10,7 +11,12 @@ export default function Register (props) {
 
   if (authMode === "signin") {
     return (
-      <div className="Auth-form-container">
+        <div>
+        <div className="Title">
+        <h1>JNIT</h1>
+              <div className="header">Pro Members</div>
+            </div>
+      <div className="Auth-form-container-signin">
         <form className="Auth-form">
           <div className="Auth-form-content">
             <h3 className="Auth-form-title">Sign In</h3>
@@ -47,10 +53,16 @@ export default function Register (props) {
           </div>
         </form>
       </div>
+      </div>
     )
   }
 
   return (
+    <div>
+    <div className="Title">
+    <h1>JNIT</h1>
+          <div className="header">Pro Members</div>
+        </div>
     <div className="Auth-form-container">
       <form className="Auth-form">
         <div className="Auth-form-content">
@@ -99,5 +111,6 @@ export default function Register (props) {
         </div>
       </form>
     </div>
+    </div>      
   )
 }
