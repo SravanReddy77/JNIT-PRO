@@ -4,6 +4,9 @@ import "./login.css";
 
 export default function Login (props) {
     return (
+        <div className="header">
+        <h1>JNIT</h1>
+              <div className="header">Pro Members</div>
       <div className="Auth-form-container">
         <form className="Auth-form">
           <div className="Auth-form-content">
@@ -37,6 +40,7 @@ export default function Login (props) {
             </p>
           </div>
         </form>
+      </div>
       </div>
     )
   }
