@@ -1,9 +1,13 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./login.css"
+import { redirect } from "react-router";
 
 export default function Register (props) {
   let [authMode, setAuthMode] = useState("signin")
+  function handleSubmit(){
+    redirect("./landing")
+  }
 
   const changeAuthMode = () => {
     setAuthMode(authMode === "signin" ? "signup" : "signin")
@@ -42,13 +46,13 @@ export default function Register (props) {
                 placeholder="Enter password"
               />
             </div>
-            <div className="d-grid gap-2 mt-3">
-              <button type="submit" className="btn btn-primary">
-                Submit
+                <form className="d-grid gap-2 mt-3" action="./landing">
+              <button type="submit" className="btn btn-primary" onClick={handleSubmit}>
+                Login
               </button>
-            </div>
+              </form>
             <p className="text-center mt-2">
-              Forgot <a href="#">password?</a>
+            <a href="#"> Forgot password?</a>
             </p>
           </div>
         </form>
@@ -106,7 +110,7 @@ export default function Register (props) {
             </button>
           </div>
           <p className="text-center mt-2">
-            Forgot <a href="#">password?</a>
+          <a href="#"> Forgot password?</a>
           </p>
         </div>
       </form>
