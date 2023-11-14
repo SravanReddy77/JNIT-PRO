@@ -2,14 +2,12 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
-import Login from './login';
-import Register from './register';
 import reportWebVitals from './reportWebVitals';
-
+import Routing from './routing';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Register />
+    <Routing />
   </React.StrictMode>
 );
 
