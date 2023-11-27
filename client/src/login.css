@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 65vh;
+    height: 50vh;
   } 
   .Auth-form {
     width: 420px;
@@ -37,6 +37,14 @@
     color: rgb(34, 34, 34);
     font-weight: 800;
   }
+
+.center {
+  display: block ;
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 150px;
+}
   
   label {
     font-size: 14px;
