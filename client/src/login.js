@@ -1,12 +1,16 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./login.css";
+import JnitLogo from './JNIT Logo.svg';
 
 export default function Login (props) {
     return (
         <div className="header">
-        <h1>JNIT</h1>
+        <h1 href={"http://localhost:3000/"}>&nbsp;JNIT<img src={JnitLogo} height={70} width={70} alt="JnitLogo"></img></h1>
               <div className="header">Pro Members</div>
+          <a href="http://localhost:3000/">
+            <img src={JnitLogo} className="center" alt="JnitLogo"></img>
+          </a>
       <div className="Auth-form-container">
         <form className="Auth-form">
           <div className="Auth-form-content">
