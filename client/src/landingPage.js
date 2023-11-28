@@ -1,6 +1,5 @@
 import React from 'react';
-import JnitLogo from "./JNIT Logo.svg";
-import "./landingPage.css";
+import JnitLogo from "./JNIT Logo.svg"
 
 export default function LandingPage(){
 
@@ -12,9 +11,8 @@ export default function LandingPage(){
 
               <h1 align="center">Welcome to JNIT</h1>
 
-
               </div>
-    );
+    )
 
 
 }
