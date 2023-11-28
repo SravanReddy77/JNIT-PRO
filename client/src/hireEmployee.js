@@ -3,7 +3,7 @@ import employee from "./employee.svg";
 import "./landingPage.css";
 import JnitLogo from "./JNIT Logo.svg"
 
-export default function hireEmployee() {
+export default function HireEmployee() {
 
     return (
         <div className="Title">

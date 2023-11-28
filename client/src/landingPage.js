@@ -9,7 +9,8 @@ export default function LandingPage(){
 
             <div className="header">Pro Members</div>
 
-              <h1 align="center">Welcome to JNIT</h1>
+              <h1  align="center">Welcome to JNIT</h1>
+            <a href="./HireEmployee">Link</a>
 
               </div>
     )
