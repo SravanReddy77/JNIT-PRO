@@ -20,10 +20,10 @@ export default function Register (props) {
         <div className="Title">
           <h1>&nbsp;JNIT<a href="http://localhost:3000/"><img  src={JnitLogo} height={70} width={70} alt="JnitLogo"></img></a></h1>
               <div className="header">Pro Members</div>
-          <a href="http://localhost:3000/">
-          <img src={JnitLogo} className="center" alt="JnitLogo"></img>
-        </a>
             </div>
+          <a href="http://localhost:3000/">
+            <img src={JnitLogo} className="center" alt="JnitLogo"></img>
+          </a>
       <div className="Auth-form-container-signin">
         <form className="Auth-form">
           <div className="Auth-form-content">
@@ -77,7 +77,7 @@ export default function Register (props) {
     <div className="Auth-form-container">
       <form className="Auth-form">
         <div className="Auth-form-content">
-          <h3 className="Auth-form-title">Sign In</h3>
+          <h3 className="Auth-form-title">Sign Up</h3>
           <div className="text-center">
             Already registered?{" "}
             <span className="link-primary" onClick={changeAuthMode}>
@@ -108,17 +108,25 @@ export default function Register (props) {
               placeholder="Password"
             />
           </div>
+            <div className="form-group mt-3">
+            <label>Reenter Password</label>
+            <input
+              type="password"
+              className="form-control mt-1"
+              placeholder="Reenter Password"
+              />
+          </div>
           <div className="d-grid gap-2 mt-3">
             <button type="submit" className="btn btn-primary">
               Submit
             </button>
-            <button type="submit" className="btn btn-primary">
+{/*            <button type="submit" className="btn btn-primary">
               Login
-            </button>
+            </button>*/}
           </div>
-          <p className="text-center mt-2">
+{/*          <p className="text-center mt-2">
           <a href="#"> Forgot password?</a>
-          </p>
+          </p>*/}
         </div>
       </form>
     </div>
