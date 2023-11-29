@@ -1,6 +1,6 @@
 import React from 'react';
 import employee from "./employee.svg";
-import "./landingPage.css";
+import "./hireEmployee.css";
 import JnitLogo from "./JNIT Logo.svg"
 
 export default function HireEmployee() {
