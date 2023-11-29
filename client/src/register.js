@@ -56,7 +56,7 @@ export default function Register (props) {
               </button>
               </form>
             <p className="text-center mt-2">
-            <a href="#"> Forgot password?</a>
+            <a href="./ForgotPassword"> Forgot password?</a>
             </p>
           </div>
         </form>

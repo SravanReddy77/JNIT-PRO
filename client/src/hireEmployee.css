@@ -1,0 +1,26 @@
+.App {
+    background-color: white;
+}
+.employee-box{
+    display: inline-grid;
+    width: 420px;
+    height: 520px;
+    box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+    padding-top: 30px;
+    padding-bottom: 300px;
+    /*
+    border-radius: 8px;
+    */
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 20px;
+
+    background-color: white;
+
+}
+.employee-image {
+    width: 150px;
+    height: 150px;
+}
