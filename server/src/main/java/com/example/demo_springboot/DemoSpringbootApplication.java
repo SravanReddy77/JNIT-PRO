@@ -8,7 +8,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class })
-@EnableJpaRepositories(basePackages="com.example.demo_springboot.Repository")
+@EnableJpaRepositories(basePackages="com.example.demo_springboot.repository")
 public class DemoSpringbootApplication {
 
     public static void main(String[] args) {
