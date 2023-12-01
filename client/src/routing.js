@@ -5,6 +5,7 @@ import Register from './register';
 import LandingPage from './landingPage';
 import HireEmployee from './hireEmployee';
 import ForgotPassword from "./forgotPassword";
+import CreateNewPassword from "./createNewPassword";
 
 export default function Routing(){
     return(
@@ -14,6 +15,7 @@ export default function Routing(){
           <Route  path="/landing" element={<LandingPage />} />
           <Route  path="/forgotPassword" element={<ForgotPassword />} />
           <Route  path="/hireEmployee" element={<HireEmployee />} />
+          <Route  path="/createNewPassword" element={<CreateNewPassword />} />
       </Routes>
     </BrowserRouter>
 

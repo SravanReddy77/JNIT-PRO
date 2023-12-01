@@ -9,12 +9,12 @@
     width: 100vw;
     height: 70vh;
   }
-.Auth-form-container {
+.Auth-form-container-forgotPassword {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 70vh;
+  height: 30vh;
 }
   .Auth-form-container-signin {
     display: flex;
@@ -49,6 +49,7 @@
   display: block ;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
   width: 350px;
   height: 150px;
 }
