@@ -1,13 +1,17 @@
 import React from "react";
 import JnitLogo from "./JNIT Logo.svg";
 import "./login.css";
+import {redirect} from "react-router";
 export default function CreateNewPassword(){
+    function handleSubmit(){
+        redirect("./")
+    }
 
         return (
-            <div className="Title">
-                <h1>&nbsp;JNIT<a href="http://localhost:3000/"><img src={JnitLogo} height={70} width={70}
-                                                                    alt="JnitLogo"></img></a></h1>
-                <div className="header">Pro Members</div>
+            <div>
+            <div className="Title"className="header">
+                <h3>&nbsp;JNIT<a href="http://localhost:3000/"><img  src={JnitLogo} height={30} width={30} alt="JnitLogo"></img></a></h3>
+            </div>
                 <a href="http://localhost:3000/">
                     <img src={JnitLogo} className="center" alt="JnitLogo"></img>
                 </a>
@@ -31,8 +35,8 @@ export default function CreateNewPassword(){
                             </div>
                             <form className="d-grid gap-2 mt-3" action="./register">
                             <div className="d-grid gap-2 mt-3">
-                                <button type="submit" className="btn btn-primary" href="./register" >
-                                    Send OTP
+                                <button type="submit" className="btn btn-primary"  >
+                                    Submit
                                 </button>
                             </div>
                             </form>
