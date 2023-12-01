@@ -6,12 +6,10 @@ import JnitLogo from "./JNIT Logo.svg"
 export default function HireEmployee() {
 
     return (
-        <div className="Title">
-            <h1>&nbsp;JNIT<a href="http://localhost:3000/"><img src={JnitLogo} height={70} width={70}
-                                                                alt="JnitLogo"></img></a></h1>
-
-            <div className="header">Pro Members</div>
-
+        <div>
+        <div className="Title"className="header">
+            <h3>&nbsp;JNIT<a href="http://localhost:3000/"><img  src={JnitLogo} height={30} width={30} alt="JnitLogo"></img></a></h3>
+        </div>
             <h1 align="center">Welcome to JNIT</h1>
             <div className="employee-box">
                 <img src={employee} alt="Employee 1" className="employee-image"></img>
