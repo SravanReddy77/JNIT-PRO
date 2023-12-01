@@ -1,7 +1,7 @@
 package com.example.demo_springboot.model;
 
 public enum UserType {
-    JUNIORADMIN,
+    JUNIOR_ADMIN,
     ADMIN,
-    SUPERADMIN
+    SUPER_ADMIN
 }
