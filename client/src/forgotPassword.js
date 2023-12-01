@@ -59,10 +59,11 @@ export default function ForgotPassword(){
             <div className="Auth-form-container-forgotPassword">
                 <form className="Auth-form">
                     <div className="Auth-form-content">
-                        <h3 className="Auth-form-title">Forgot Password?</h3>
+                        <h3 className="Auth-form-verification">OTP Sent!</h3>
                         <div className="form-group mt-3">
                             <label>Enter Email</label>
                             <input
+                                disabled
                                 type="email"
                                 className="form-control mt-1"
                                 placeholder="Enter email"

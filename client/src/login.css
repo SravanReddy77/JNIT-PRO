@@ -16,6 +16,13 @@
   width: 100vw;
   height: 30vh;
 }
+.Auth-form-container-createNewpassword{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 40vh;
+}
   .Auth-form-container-signin {
     display: flex;
     justify-content: center;
@@ -44,6 +51,13 @@
     color: rgb(34, 34, 34);
     font-weight: 800;
   }
+.Auth-form-verification {
+  text-align: center;
+  margin-bottom: 1em;
+  font-size: 20px;
+  color: rgb(34, 34, 34);
+  font-weight: 800;
+}
 
 .center {
   display: block ;
@@ -62,11 +76,12 @@
   .header {
     box-sizing: border-box;
     width: 100%;
+
     display: flex;
-    justify-content: center;
+    justify-content: left;
     align-items: baseline;
-    padding: 1em;
-    margin-bottom: 2em;
-    background-color: rgb(48, 146, 245);
+    padding: 0.1em;
+    margin-bottom: 0.5em;
+    background-color: rgb(20,20,300);
     color: #fff;
   }
