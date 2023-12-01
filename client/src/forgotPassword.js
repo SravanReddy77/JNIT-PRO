@@ -75,7 +75,7 @@ export default function ForgotPassword(){
                                 placeholder="Enter OTP"
                             />
                         </div>
-                        <form action="./classNewPassword">
+                        <form className="d-grid gap-2 mt-3" action="./createNewPassword">
                             <div className="d-grid gap-2 mt-3">
                                 <button type="submit" className="btn btn-primary" onClick={handleSubmit}>
                                 Submit
