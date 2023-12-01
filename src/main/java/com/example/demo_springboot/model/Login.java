@@ -6,7 +6,7 @@ import jakarta.persistence.*;
 import java.util.Date;
 
 @Entity
-@Table(name = "registration")
+@Table(name = "login")
 public class Login {
 
 
