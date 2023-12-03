@@ -49,8 +49,10 @@ export default function ForgotPassword(){
         )
     }
     return (
+        <div>
         <div className="header">
             <h3>&nbsp;JNIT<a href="http://localhost:3000/"><img  src={JnitLogo} height={30} width={30} alt="JnitLogo"></img></a></h3>
+        </div>
             <a href="http://localhost:3000/">
                 <img src={JnitLogo} className="center" alt="JnitLogo"></img>
             </a>
