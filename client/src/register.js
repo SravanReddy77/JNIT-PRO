@@ -33,6 +33,16 @@ export default function Register (props) {
                 Sign Up
               </span>
             </div>
+            <br/>
+            <div className="dropdown-container">
+              <label form="dropdown">SignIn Into: </label>
+              <select id="dropdown" className="custom-dropdown">
+                <option value="" disabled selected>Select an option</option>
+                <option value="Admin">Admin</option>
+                <option value="Junior Admin">Junior Admin</option>
+                <option value="Senior Admin">Senior Admin</option>
+              </select>
+            </div>
             <div className="form-group mt-3">
               <label>Email address</label>
               <input
@@ -82,7 +92,17 @@ export default function Register (props) {
               Sign In
             </span>
           </div>
-          <div className="form-group mt-3">
+          <br/>
+          <div className="dropdown-container">
+            <label htmlFor="dropdown">SignUp Into: </label>
+            <select id="dropdown" className="custom-dropdown">
+              <option value="" disabled selected>Select an option</option>
+              <option value="Admin">Admin</option>
+              <option value="Junior Admin">Junior Admin</option>
+              <option value="Senior Admin">Senior Admin</option>
+            </select>
+          </div>
+          <div className="form-group mt-1">
             <label>Full Name</label>
             <input
               type="email"
