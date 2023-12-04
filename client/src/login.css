@@ -94,7 +94,8 @@
     color: rgb(34, 34, 34);
   }
   .image{
-    padding-bottom: 30px;
+    padding-top: 20px;
+    padding-bottom: 50px;
   }
   .header {
     box-sizing: border-box;
