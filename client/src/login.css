@@ -7,14 +7,14 @@
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 70vh;
+    height: 60vh;
   }
 .Auth-form-container-forgotPassword {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100vw;
-  height: 30vh;
+  height: 40vh;
 }
 .Auth-form-container-createNewpassword{
   display: flex;
@@ -32,7 +32,7 @@
   } 
   .Auth-form {
     width: 420px;
-    box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+    box-shadow: 3px 5px 10px 10px lightblue;
     padding-top: 40px;
     padding-bottom: 20px;
     border-radius: 8px;
