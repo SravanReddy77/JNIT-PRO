@@ -109,3 +109,9 @@
     background-color: rgb(0, 77, 102);
     color: #cccccc;
   }
+.btn-primary:hover{
+  background-color: rgb(0, 77, 102);
+}
+.btn-primary{
+  background-color:rgb(0, 77, 102) ;
+}
