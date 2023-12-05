@@ -2,14 +2,16 @@
     background-color: white;
 }
 .view-details-btn {
-    background-color: rgba(66, 139, 202, 0.5);
-    width: 30px;
-
+    background-color: rgba(18, 127, 222, 0.5);
+    width: 300px;
     color: white;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+.hover{
+    hover-display: solid;
 }
 .employee-box{
     display: inline-grid;
