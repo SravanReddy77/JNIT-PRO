@@ -21,7 +21,7 @@ export default function CreateNewPassword(){
                     <form className="Auth-form">
                         <div className="Auth-form-content">
                             <h3 className="Auth-form-title">Create New Password</h3>
-                            <p classname="Auth-form-confirm" align="center"><span class="Greentext">OTP IS VERIFIED!</span></p>
+                            <p className="Auth-form-confirm" align="center"><span className="greenText">OTP is Verified!</span></p>
                             <div className="form-group mt-3">
                                 <label>Enter Password</label>
                                 <input

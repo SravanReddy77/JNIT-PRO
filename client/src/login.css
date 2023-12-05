@@ -106,12 +106,12 @@
     align-items: baseline;
     padding: 0.1em;
     margin-bottom: 0.5em;
-
     background-color: rgb(45,70,300);
     color: #fff;
   }
-  .Greentext{
+  .greenText{
     color: Darkgreen;
-    
+    text-align: center;
   }
+
 
