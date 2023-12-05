@@ -109,7 +109,7 @@ export default function Register (props) {
           <div className="form-group mt-1">
             <label>Full Name</label>
             <input
-              type="email"
+              type="text"
               className="form-control mt-1"
               placeholder="Full Name"
             />

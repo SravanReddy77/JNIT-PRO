@@ -106,12 +106,12 @@
     align-items: baseline;
     padding: 0.1em;
     margin-bottom: 0.5em;
-    background-color: rgb(0, 77, 102);
-    color: #cccccc;
+
+    background-color: rgb(45,70,300);
+    color: #fff;
   }
-.btn-primary:hover{
-  background-color: rgb(0, 77, 102);
-}
-.btn-primary{
-  background-color:rgb(0, 77, 102) ;
-}
+  .Greentext{
+    color: Darkgreen;
+    
+  }
+
