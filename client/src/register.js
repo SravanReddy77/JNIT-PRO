@@ -18,7 +18,7 @@ export default function Register (props) {
     return (
         <div>
         <div className="header">
-          <h3>&nbsp;JNIT<a href="http://localhost:3000/"><img  src={JnitLogo} height={30} width={30} alt="JnitLogo"></img></a></h3>
+          <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80} alt="JnitLogo"></img></a>
         </div>
           <div className="image">
           <a href="http://localhost:3000/">
@@ -79,8 +79,8 @@ export default function Register (props) {
   return (
     <div>
     <div className="header">
-      <h3>&nbsp;JNIT<a href="http://localhost:3000/"><img  src={JnitLogo} height={30} width={30} alt="JnitLogo"></img></a></h3>
-        </div>
+        <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80} alt="JnitLogo"></img></a>
+      </div>
       <div className="image">
         <a href="http://localhost:3000/">
           <img src={JnitLogo} className="center" alt="JnitLogo"></img>
@@ -139,7 +139,7 @@ export default function Register (props) {
               />
           </div>
           <div className="d-grid gap-2 mt-3">
-            <button type="submit" className="btn btn-primary">
+            <button type="submit" className="btn btn-primary" >
               Submit
             </button>
 {/*            <button type="submit" className="btn btn-primary">

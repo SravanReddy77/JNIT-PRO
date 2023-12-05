@@ -16,9 +16,9 @@ export default function ForgotPassword(){
         if (authMode === "forgotPassword") {
         return (
             <div>
-            <div className="header">
-                <h3>&nbsp;JNIT<a href="http://localhost:3000/"><img  src={JnitLogo} height={30} width={30} alt="JnitLogo"></img></a></h3>
-            </div>
+                <div className="header">
+                    <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80} alt="JnitLogo"></img></a>
+                </div>
                 <a href="http://localhost:3000/">
                     <img src={JnitLogo} className="center" alt="JnitLogo"></img>
                 </a>
@@ -50,9 +50,9 @@ export default function ForgotPassword(){
     }
     return (
         <div>
-        <div className="header">
-            <h3>&nbsp;JNIT<a href="http://localhost:3000/"><img  src={JnitLogo} height={30} width={30} alt="JnitLogo"></img></a></h3>
-        </div>
+            <div className="header">
+                <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80} alt="JnitLogo"></img></a>
+            </div>
             <div className="image">
                 <a href="http://localhost:3000/">
                     <img src={JnitLogo} className="center" alt="JnitLogo"></img>
