@@ -9,9 +9,9 @@ export default function CreateNewPassword(){
 
         return (
             <div>
-            <div className="header">
-                <h3>&nbsp;JNIT<a href="http://localhost:3000/"><img  src={JnitLogo} height={30} width={30} alt="JnitLogo"></img></a></h3>
-            </div>
+                <div className="header">
+                    <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80} alt="JnitLogo"></img></a>
+                </div>
                 <div className="image">
                     <a href="http://localhost:3000/">
                         <img src={JnitLogo} className="center" alt="JnitLogo"></img>
@@ -21,7 +21,7 @@ export default function CreateNewPassword(){
                     <form className="Auth-form">
                         <div className="Auth-form-content">
                             <h3 className="Auth-form-title">Create New Password</h3>
-                            <p classname="Auth-form-confirm" align="center"><span class="Greentext">OTP IS VERIFIED!</span></p>
+                            <p className="Auth-form-confirm" align="center"><span className="greenText">OTP is Verified!</span></p>
                             <div className="form-group mt-3">
                                 <label>Enter Password</label>
                                 <input

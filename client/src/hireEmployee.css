@@ -1,11 +1,21 @@
 .App {
     background-color: white;
 }
+.view-details-btn {
+    background-color: rgba(66, 139, 202, 0.5);
+    width: 30px;
+
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 .employee-box{
     display: inline-grid;
-    width: 420px;
-    height: 520px;
-    box-shadow: rgb(0 0 0 / 16%) 1px 1px 10px;
+    width: 300px;
+    height: 500px;
+    box-shadow: 2px 2px 4px 4px #007399;
     padding-top: 30px;
     padding-bottom: 300px;
     /*

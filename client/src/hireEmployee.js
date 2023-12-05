@@ -7,9 +7,9 @@ export default function HireEmployee() {
 
     return (
         <div>
-        <div className="header">
-            <h3>&nbsp;JNIT<a href="http://localhost:3000/"><img  src={JnitLogo} height={30} width={30} alt="JnitLogo"></img></a></h3>
-        </div>
+            <div className="header">
+                <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80} alt="JnitLogo"></img></a>
+            </div>
             <h1 align="center">Welcome to JNIT</h1>
             <div className="employee-box">
                 <img src={employee} alt="Employee 1" className="employee-image"></img>
@@ -27,16 +27,26 @@ export default function HireEmployee() {
                 <img src={employee} alt="Employee 2" className="employee-image"></img>
                 <h2> James Richardson</h2>
                 <p> Python </p>
+<<<<<<< Updated upstream
                 <p>Details:3000$/month, <br></br>Client : Macys(Texas)<br></br>
                     India </p>
+=======
+                <p>Details: </p>
+
+>>>>>>> Stashed changes
             </div>
 
             <div className="employee-box">
                 <img src={employee} alt="Employee 3" className="employee-image"></img>
                 <h2> Kinney William </h2>
                 <p> Devops </p>
+<<<<<<< Updated upstream
                 <p>Details:5000$/month,<br></br>Client: Amazon(Boston)<br></br>
                   USA </p>
+=======
+                <p>Details: </p>
+                <button type="button" className="view-details-btn">View Details</button>
+>>>>>>> Stashed changes
             </div>
             <div className="employee-box">
                 <img src={employee} alt="Employee 4" className="employee-image"></img>

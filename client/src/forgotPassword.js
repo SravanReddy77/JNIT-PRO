@@ -16,9 +16,9 @@ export default function ForgotPassword(){
         if (authMode === "forgotPassword") {
         return (
             <div>
-            <div className="header">
-                <h3>&nbsp;JNIT<a href="http://localhost:3000/"><img  src={JnitLogo} height={30} width={30} alt="JnitLogo"></img></a></h3>
-            </div>
+                <div className="header">
+                    <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80} alt="JnitLogo"></img></a>
+                </div>
                 <a href="http://localhost:3000/">
                     <img src={JnitLogo} className="center" alt="JnitLogo"></img>
                 </a>
@@ -50,9 +50,9 @@ export default function ForgotPassword(){
     }
     return (
         <div>
-        <div className="header">
-            <h3>&nbsp;JNIT<a href="http://localhost:3000/"><img  src={JnitLogo} height={30} width={30} alt="JnitLogo"></img></a></h3>
-        </div>
+            <div className="header">
+                <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80} alt="JnitLogo"></img></a>
+            </div>
             <div className="image">
                 <a href="http://localhost:3000/">
                     <img src={JnitLogo} className="center" alt="JnitLogo"></img>
@@ -61,7 +61,8 @@ export default function ForgotPassword(){
             <div className="Auth-form-container-forgotPassword">
                 <form className="Auth-form">
                     <div className="Auth-form-content">
-                        <h3 className="Auth-form-verification">OTP Sent!</h3>
+                       <h3 className="Auth-form-verification">OTP</h3>
+                        <p className="Auth-form-confirm" align="center"><span className="greenText">Sent Successfully!</span></p>
                         <div className="form-group mt-3">
                             <label>Enter Email</label>
                             <input
