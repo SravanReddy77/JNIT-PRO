@@ -4,8 +4,10 @@ package com.example.demo_springboot.model;
 import jakarta.persistence.*;
 import java.util.UUID;
 
+import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.GenericGenerator;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Entity
@@ -17,10 +19,10 @@ public class Registration {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
-    @GeneratedValue(generator = "uuid2")
     @GenericGenerator(name = "uuid2", strategy = "uuid2")
+    @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "uuid2")
     @Column(name = "uuid")
-    private UUID uuid;
+    private String uuid = UUID.randomUUID().toString().toUpperCase();;
 
     @Column(name = "name")
     private String name;
@@ -41,9 +43,9 @@ public class Registration {
     @Column(name = "userType")
     private UserType userType;
 
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @CreationTimestamp
     @Column(name = "date")
-    private Date date;
+    private LocalDateTime date;
 
     public Integer getId() {
         return id;
@@ -53,11 +55,11 @@ public class Registration {
         this.id = id;
     }
 
-    public UUID getUuid() {
+    public String getUuid() {
         return uuid;
     }
 
-    public void setUuid(UUID uuid) {
+    public void setUuid(String uuid) {
         this.uuid = uuid;
     }
 
@@ -109,11 +111,11 @@ public class Registration {
         this.userType = userType;
     }
 
-    public Date getDate() {
+    public LocalDateTime getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(LocalDateTime date) {
         this.date = date;
     }
 }
