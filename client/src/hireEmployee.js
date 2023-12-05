@@ -13,14 +13,12 @@ export default function HireEmployee() {
             <h1 align="center">Welcome to JNIT</h1>
             <div className="employee-box">
                 <img src={employee} alt="Employee 1" className="employee-image"></img>
-                
                 <h2> John Hooper</h2>
                 <p> Sr.Full Stack Java Developer</p>
                 <p>Details: 1500$/month,<br></br>Client : Neilson(Chicago)<br></br>
                              USA </p>
                              <button type="button" className="view-details-btn">View Details</button>
-              
-                 </div>
+                              </div>
             <div className="employee-box">
                 <img src={employee} alt="Employee 2" className="employee-image"></img>
                 <h2> James Richardson</h2>
@@ -29,7 +27,6 @@ export default function HireEmployee() {
                     India </p>
                     <button type="button" className="view-details-btn">View Details</button>
             </div>
-
             <div className="employee-box">
                 <img src={employee} alt="Employee 3" className="employee-image"></img>
                 <h2> Kinney William </h2>
