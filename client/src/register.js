@@ -111,7 +111,7 @@ export default function Register (props) {
             <input
               type="email"
               className="form-control mt-1"
-              placeholder="e.g Jane Doe"
+              placeholder="Full Name"
             />
           </div>
           <div className="form-group mt-3">
@@ -127,7 +127,7 @@ export default function Register (props) {
             <input
               type="password"
               className="form-control mt-1"
-              placeholder="Password"
+              placeholder="Enter Password"
             />
           </div>
             <div className="form-group mt-3">
