@@ -2,6 +2,9 @@ package com.example.demo_springboot.model;
 
 
 import jakarta.persistence.*;
+import java.util.UUID;
+
+import org.hibernate.annotations.GenericGenerator;
 
 import java.util.Date;
 
@@ -14,8 +17,10 @@ public class Registration {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
+    @GeneratedValue(generator = "uuid2")
+    @GenericGenerator(name = "uuid2", strategy = "uuid2")
     @Column(name = "uuid")
-    private Integer uuid;
+    private UUID uuid;
 
     @Column(name = "name")
     private String name;
@@ -36,6 +41,7 @@ public class Registration {
     @Column(name = "userType")
     private UserType userType;
 
+    @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "date")
     private Date date;
 
@@ -47,11 +53,11 @@ public class Registration {
         this.id = id;
     }
 
-    public Integer getUuid() {
+    public UUID getUuid() {
         return uuid;
     }
 
-    public void setUuid(Integer uuid) {
+    public void setUuid(UUID uuid) {
         this.uuid = uuid;
     }
 
