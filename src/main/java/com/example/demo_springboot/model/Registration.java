@@ -22,7 +22,7 @@ public class Registration {
     @GenericGenerator(name = "uuid2", strategy = "uuid2")
     @GeneratedValue(strategy = GenerationType.IDENTITY, generator = "uuid2")
     @Column(name = "uuid")
-    private String uuid = UUID.randomUUID().toString().toUpperCase();;
+    private String uuid = UUID.randomUUID().toString().toUpperCase();
 
     @Column(name = "name")
     private String name;
@@ -36,12 +36,12 @@ public class Registration {
     @Column(name = "email")
     private String email;
 
-    @Column(name = "dateOfBirth")
-    private Date dateOfBirth;
+    @Column(name = "date_of_birth")
+    private Date date_of_birth;
 
     @Enumerated(EnumType.STRING)
-    @Column(name = "userType")
-    private UserType userType;
+    @Column(name = "user_type")
+    private UserType user_type;
 
     @CreationTimestamp
     @Column(name = "date")
@@ -95,20 +95,20 @@ public class Registration {
         this.email = email;
     }
 
-    public Date getDateOfBirth() {
-        return dateOfBirth;
+    public Date getDate_of_birth() {
+        return date_of_birth;
     }
 
-    public void setDateOfBirth(Date dateOfBirth) {
-        this.dateOfBirth = dateOfBirth;
+    public void setDate_of_birth(Date date_of_birth) {
+        this.date_of_birth = date_of_birth;
     }
 
-    public UserType getUserType() {
-        return userType;
+    public UserType getUser_type() {
+        return user_type;
     }
 
-    public void setUserType(UserType userType) {
-        this.userType = userType;
+    public void setUser_type(UserType user_type) {
+        this.user_type = user_type;
     }
 
     public LocalDateTime getDate() {
