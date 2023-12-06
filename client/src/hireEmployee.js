@@ -25,15 +25,31 @@ export default function HireEmployee() {
                 <p> Python </p>
                 <p>Details:3000$/month, <br></br>Client : Macys(Texas)<br></br>
                     India </p>
+
                     <button type="button" className="view-details-btn" >View Details</button>
+
+
+                <p>Details: </p>
+
+
             </div>
             <div className="employee-box">
                 <img src={employee} alt="Employee 3" className="employee-image"></img>
                 <h2> Kinney William </h2>
                 <p> Devops </p>
+
                 <p>Details:5000$/month,<br></br>Client: Amazon(Boston)<br></br>
                   USA </p>
                 <button type="button" className="view-details-btn">View Details</button>
+
+
+                <p>Details:5000$/month,<br></br>Client: Amazon(Boston)<br></br>
+                  USA </p>
+
+                <p>Details: </p>
+                <button type="button" className="view-details-btn">View Details</button>
+
+
             </div>
             <div className="employee-box">
                 <img src={employee} alt="Employee 4" className="employee-image"></img>
