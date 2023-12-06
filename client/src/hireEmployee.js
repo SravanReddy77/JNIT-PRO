@@ -44,7 +44,7 @@ export default function HireEmployee() {
                   USA </p>
 
                 <p>Details: </p>
-                <button type="button" className="view-details-btn">View Details</button>
+                <button type="submit" className="view-details-btn">View Details</button>
 
             </div>
             <div className="employee-box">
