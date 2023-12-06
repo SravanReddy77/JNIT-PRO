@@ -10,7 +10,7 @@ export default function HireEmployee() {
             <div className="header">
                 <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80} alt="JnitLogo"></img></a>
             </div>
-            <h1 align="center">Welcome to JNIT</h1>
+            <h1 align="center">JNIT Team Members</h1>
             <div className="employee-box">
                 <img src={employee} alt="Employee 1" className="employee-image"></img>
                 <h2> John Hooper</h2>
@@ -19,6 +19,7 @@ export default function HireEmployee() {
                              USA </p>
                              <button type="button" className="view-details-btn">View Details</button>
                               </div>
+
             <div className="employee-box">
                 <img src={employee} alt="Employee 2" className="employee-image"></img>
                 <h2> James Richardson</h2>
@@ -27,11 +28,6 @@ export default function HireEmployee() {
                     India </p>
 
                     <button type="button" className="view-details-btn" >View Details</button>
-
-
-                <p>Details: </p>
-
-
             </div>
             <div className="employee-box">
                 <img src={employee} alt="Employee 3" className="employee-image"></img>
@@ -41,15 +37,6 @@ export default function HireEmployee() {
                 <p>Details:5000$/month,<br></br>Client: Amazon(Boston)<br></br>
                   USA </p>
                 <button type="button" className="view-details-btn">View Details</button>
-
-
-                <p>Details:5000$/month,<br></br>Client: Amazon(Boston)<br></br>
-                  USA </p>
-
-                <p>Details: </p>
-                <button type="submit" className="view-details-btn">View Details</button>
-
-
             </div>
             <div className="employee-box">
                 <img src={employee} alt="Employee 4" className="employee-image"></img>
