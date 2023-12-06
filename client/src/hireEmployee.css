@@ -2,8 +2,9 @@
     background-color: white;
 }
 .view-details-btn {
-    background-color: rgba(66, 139, 202, 0.5);
-    display: flex;
+
+    background-color: rgba(18, 127, 222, 0.5);
+    width: 300px;
     color: white;
     padding: 10px 20px ;
     border-radius: 5px;
@@ -11,6 +12,8 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+
+
 .employee-box{
     display: inline-grid;
     width: 300px;

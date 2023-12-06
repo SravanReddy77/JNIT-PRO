@@ -16,6 +16,10 @@ export default function Routing(){
           <Route  path="/forgotPassword" element={<ForgotPassword />} />
           <Route  path="/hireEmployee" element={<HireEmployee />} />
           <Route  path="/createNewPassword" element={<CreateNewPassword />} />
+
+
+          
+          
       </Routes>
     </BrowserRouter>
 
