@@ -3,9 +3,30 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./login.css"
 import JnitLogo from './JNIT Logo.svg';
 import { redirect } from "react-router";
+import axios from 'axios';
 
 export default function Register (props) {
   let [authMode, setAuthMode] = useState("signin")
+  const[fullName, setFullName] =useState("");
+  const[email, setEmail] =useState("");
+  const[password, setPassword] =useState("");
+  const handleRegister = async () => {
+    try {
+      const response = await axios.post('http://localhost:8080/saveRegister', {
+        username: fullName,
+        email: email,
+        password: password,
+      });
+
+      console.log('Registration successful', response.data);
+
+      setFullName("");
+      setEmail("");
+      setPassword("");
+    } catch (error) {
+      console.error('Registration failed', error.message);
+    }
+  };
   function handleSubmit(){
     redirect("./landing")
   }
@@ -110,16 +131,20 @@ export default function Register (props) {
             <label>Full Name</label>
             <input
               type="text"
+              value={fullName}
               className="form-control mt-1"
               placeholder="Full Name"
+              onChange={(e) => setFullName(e.target.value)}
             />
           </div>
           <div className="form-group mt-3">
             <label>Email address</label>
             <input
               type="email"
+              value={email}
               className="form-control mt-1"
               placeholder="Email Address"
+              onChange={(e) => setEmail(e.target.value)}
             />
           </div>
           <div className="form-group mt-3">
@@ -134,12 +159,14 @@ export default function Register (props) {
             <label>Reenter Password</label>
             <input
               type="password"
+              value={password}
               className="form-control mt-1"
               placeholder="Reenter Password"
+              onChange={(e) => setPassword(e.target.value)}
               />
           </div>
           <div className="d-grid gap-2 mt-3">
-            <button type="submit" className="btn btn-primary" >
+            <button type="submit" className="btn btn-primary" onClick={handleRegister}>
               Submit
             </button>
 {/*            <button type="submit" className="btn btn-primary">

@@ -2,12 +2,16 @@
     background-color: white;
 }
 .view-details-btn {
-
+    background-color: rgba(66, 139, 202, 0.5);
+    align-content: center;
+    display: flex;
+    justify-content: center;
     background-color: rgba(18, 127, 222, 0.5);
     width: 300px;
     color: white;
+    width: 50%;
     padding: 10px 20px ;
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
@@ -21,9 +25,8 @@
     box-shadow: 2px 2px 4px 4px #007399;
     padding-top: 30px;
     padding-bottom: 300px;
-    /*
     border-radius: 8px;
-    */
+
     text-align: center;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -33,6 +36,7 @@
 
 }
 .employee-image {
+ align-items: center;
     width: 150px;
     height: 150px;
 }
