@@ -119,5 +119,36 @@
   .btn-primary{
   background-color:rgb(0, 77, 102) ;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-right: 20%;
+}
+
+li {
+  display: inline;
+  margin-right: 20px;
+
+}
+
+.nav-btn {
+  text-decoration: none;
+  color: white;
+}
+
+.logout-btn {
+  cursor: pointer;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  margin-left: 400%;
+}
 
 
