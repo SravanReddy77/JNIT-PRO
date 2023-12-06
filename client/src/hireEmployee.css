@@ -10,9 +10,8 @@
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-.hover{
-    hover-display: solid;
-}
+
+
 .employee-box{
     display: inline-grid;
     width: 300px;

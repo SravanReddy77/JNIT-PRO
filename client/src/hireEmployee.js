@@ -25,7 +25,7 @@ export default function HireEmployee() {
                 <p> Python </p>
                 <p>Details:3000$/month, <br></br>Client : Macys(Texas)<br></br>
                     India </p>
-                    <button type="button" className="view-details-btn">View Details</button>
+                    <button type="button" className="view-details-btn" >View Details</button>
             </div>
             <div className="employee-box">
                 <img src={employee} alt="Employee 3" className="employee-image"></img>
