@@ -6,7 +6,7 @@ import JnitLogo from './JNIT Logo.svg';
 export default function Login (props) {
     return (
         <div className="header">
-        <h1 href={"http://localhost:3000/"}>&nbsp;JNIT<img src={JnitLogo} height={70} width={70} alt="JnitLogo"></img></h1>
+       <img src={JnitLogo} height={70} width={70} alt="JnitLogo"></img>
               <div className="header">Pro Members</div>
           <a href="http://localhost:3000/">
             <img src={JnitLogo} className="center" alt="JnitLogo"></img>

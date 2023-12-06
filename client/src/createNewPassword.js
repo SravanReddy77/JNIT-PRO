@@ -11,6 +11,13 @@ export default function CreateNewPassword(){
             <div>
                 <div className="header">
                     <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80} alt="JnitLogo"></img></a>
+                    <nav>
+                        <ul>
+                            <li><a className="nav-btn" href="#home">Home</a></li>
+                            <li><a className="nav-btn" href="#about">About</a></li>
+                            <li><a className="nav-btn" href="#contact">Contact</a></li>
+                        </ul>
+                    </nav>
                 </div>
                 <div className="image">
                     <a href="http://localhost:3000/">

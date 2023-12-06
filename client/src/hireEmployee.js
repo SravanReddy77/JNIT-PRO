@@ -9,6 +9,16 @@ export default function HireEmployee() {
         <div>
             <div className="header">
                 <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80} alt="JnitLogo"></img></a>
+
+                <nav>
+                    <ul>
+                        <li><a className="nav-btn" href="#home">Home</a></li>
+                        <li><a className="nav-btn" href="#about">About</a></li>
+                        <li><a className="nav-btn" href="#contact">Contact</a></li>
+                    </ul>
+                    <a className="logout-btn" href="http://localhost:3000">
+                        <div>Logout</div></a>
+                </nav>
             </div>
             <h1 align="center">JNIT Team Members</h1>
             <div className="employee-box">
