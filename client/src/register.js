@@ -3,30 +3,66 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./login.css"
 import JnitLogo from './JNIT Logo.svg';
 import { redirect } from "react-router";
-import axios from 'axios';
+import axios from "axios";
 
 export default function Register (props) {
-  let [authMode, setAuthMode] = useState("signin")
-  const[fullName, setFullName] =useState("");
-  const[email, setEmail] =useState("");
-  const[password, setPassword] =useState("");
-  const handleRegister = async () => {
-    try {
-      const response = await axios.post('http://localhost:8080/saveRegister', {
-        username: fullName,
-        email: email,
-        password: password,
-      });
 
-      console.log('Registration successful', response.data);
 
-      setFullName("");
-      setEmail("");
-      setPassword("");
-    } catch (error) {
-      console.error('Registration failed', error.message);
-    }
+  let [authMode, setAuthMode] = useState("signin");
+
+  // const [register, setRegister] = useState({
+  //   name:'',
+  //   email:'',
+  //   password: ''
+  // })
+const [name, setName] = useState('');
+const [email, setEmail] = useState('');
+const [password, setPassword] = useState('');
+const [userType, setUserType] = useState('');
+
+const handleUserTypeChange = (e) => {
+  setUserType(e.target.value)
+}
+
+const handleNameChange = (e) => {
+setName(e.target.value)
+} 
+const handleEmailChange = (e) => {
+  setEmail(e.target.value)
+} 
+const handlePasswordChange = (e) => {
+  setPassword(e.target.value)
+} 
+const registerData = () => {
+  let formData = {
+    dateOfBirth: "2023-06-14T23:00:00.000Z",
+    name : name,
+    email: email,
+    password: password,
+    userType: userType,
+    username:"sravan"
   };
+
+  axios({
+    url: "http://localhost:8080/saveRegister",
+    method: "POST",
+    withCredentials: false,
+    headers: {
+      "Content-Type": "application/json",
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Methods": "GET,PUT,POST,DELETE,PATCH,OPTIONS"
+        },
+    data: formData,
+})
+
+    .then((res) => {
+      console.log(JSON.stringify(res))
+    })
+
+    .catch((err) => {
+      console.log(err);
+    });
+}
   function handleSubmit(){
     redirect("./landing")
   }
@@ -134,31 +170,31 @@ export default function Register (props) {
           <br/>
           <div className="dropdown-container">
             <label htmlFor="dropdown">SignUp Into: </label>
-            <select id="dropdown" className="custom-dropdown">
+            <select id="dropdown" className="custom-dropdown" onChange= {handleUserTypeChange} value={userType}>
               <option value="" disabled selected>Select an option</option>
-              <option value="Admin">Admin</option>
-              <option value="Junior Admin">Junior Admin</option>
-              <option value="Senior Admin">Senior Admin</option>
+              <option value="ADMIN">Admin</option>
+              <option value="JUNIOR_ADMIN">Junior Admin</option>
+              <option value="SUPER_ADMIN">Senior Admin</option>
             </select>
           </div>
           <div className="form-group mt-1">
             <label>Full Name</label>
             <input
               type="text"
-              value={fullName}
               className="form-control mt-1"
               placeholder="Full Name"
-              onChange={(e) => setFullName(e.target.value)}
+              onChange={handleNameChange}
+              value={name}
             />
           </div>
           <div className="form-group mt-3">
             <label>Email address</label>
             <input
               type="email"
-              value={email}
               className="form-control mt-1"
               placeholder="Email Address"
-              onChange={(e) => setEmail(e.target.value)}
+              onChange={handleEmailChange}
+              value={email}
             />
           </div>
           <div className="form-group mt-3">
@@ -167,6 +203,8 @@ export default function Register (props) {
               type="password"
               className="form-control mt-1"
               placeholder="Enter Password"
+              onChange={handlePasswordChange}
+              value={password}
             />
           </div>
             <div className="form-group mt-3">
@@ -180,7 +218,7 @@ export default function Register (props) {
               />
           </div>
           <div className="d-grid gap-2 mt-3">
-            <button type="submit" className="btn btn-primary" onClick={handleRegister}>
+            <button type="submit" className="btn btn-primary" onClick={registerData}>
               Submit
             </button>
 {/*            <button type="submit" className="btn btn-primary">
