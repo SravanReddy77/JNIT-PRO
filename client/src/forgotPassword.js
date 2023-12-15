@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import JnitLogo from "./JNIT Logo.svg";
 import "./login.css";
 import {redirect} from "react-router";
-import CreateNewPassword from "./createNewPassword";
+import NavbarComponent from "./Navigation";
 
 export default function ForgotPassword(){
     let [authMode, setAuthMode] = useState("forgotPassword")
@@ -16,25 +16,17 @@ export default function ForgotPassword(){
         if (authMode === "forgotPassword") {
         return (
             <div>
-                <div className="header">
-                    <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80} alt="JnitLogo"></img></a>
-                    <nav>
-                        <ul>
-                            <li><a className="nav-btn" href="#home">Home</a></li>
-                            <li><a className="nav-btn" href="#about">About</a></li>
-                            <li><a className="nav-btn" href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <a href="http://localhost:3000/">
-                    <img src={JnitLogo} className="center" alt="JnitLogo"></img>
-                </a>
-                <div className="Auth-form-container-forgotPassword">
-                    <form className="Auth-form">
-                        <div className="Auth-form-content">
-                            <h3 className="Auth-form-title">Forgot Password?</h3>
+                <NavbarComponent/>
+                <div className="login">
+                    <a href="http://localhost:3000/">
+                        <img src={JnitLogo} className="center" alt="JnitLogo"></img>
+                    </a>
+                    <h2>Forgot Password?</h2>
+                    <form className="login-form">
+                        <div className="textbox">
+
                             <div className="form-group mt-3">
-                                <label>Enter Email</label>
+                                <label className="custom-label">Enter Email</label>
                                 <input
                                     type="email"
                                     className="form-control mt-1"
@@ -57,28 +49,20 @@ export default function ForgotPassword(){
     }
     return (
         <div>
-            <div className="header">
-                <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80} alt="JnitLogo"></img></a>
-                <nav>
-                    <ul>
-                        <li><a className="nav-btn" href="#home">Home</a></li>
-                        <li><a className="nav-btn" href="#about">About</a></li>
-                        <li><a className="nav-btn" href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div className="image">
-                <a href="http://localhost:3000/">
-                    <img src={JnitLogo} className="center" alt="JnitLogo"></img>
-                </a>
-            </div>
-            <div className="Auth-form-container-forgotPassword">
-                <form className="Auth-form">
-                    <div className="Auth-form-content">
-                       <h3 className="Auth-form-verification">OTP</h3>
+            <NavbarComponent/>
+
+                <div className="login">
+                    <a href="http://localhost:3000/">
+                        <img src={JnitLogo} className="center" alt="JnitLogo"></img>
+                    </a>
+
+                    <h2>OTP</h2>
+                <form className="login-form">
+                    <div className="textbox">
+
                         <p className="Auth-form-confirm" align="center"><span className="greenText">Sent Successfully!</span></p>
                         <div className="form-group mt-3">
-                            <label>Enter Email</label>
+                            <label className="custom-label">Enter Email</label>
                             <input
                                 disabled
                                 type="email"
@@ -86,7 +70,7 @@ export default function ForgotPassword(){
                                 placeholder="Enter email"
                             />
                             <br/>
-                            <label>Enter OTP</label>
+                            <label className="custom-label">Enter OTP</label>
                             <input
                                 type="enter OTP"
                                 className="form-control mt-2"

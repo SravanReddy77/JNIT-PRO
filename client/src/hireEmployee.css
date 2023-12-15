@@ -16,9 +16,11 @@
 
 .employee-box{
     display: inline-grid;
-    box-shadow: 2px 2px 4px 4px #007399;
+    color: white;
+    box-shadow: 2px 2px 4px 4px  #001a33;
     width: 300px;
     height: 500px;
+    background-image: url("Rect Light.svg");
     margin-top: 20px;
     margin-bottom: 50px;
     margin-left: 50px;
@@ -36,4 +38,13 @@
     justify-items: center;
     width: 100%;
     height: 100%;
+}
+h2 {
+    align-content: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    /*
+    margin: 0 0 4px;
+    */
 }

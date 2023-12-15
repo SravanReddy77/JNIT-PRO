@@ -6,7 +6,6 @@ import LandingPage from './landingPage';
 import HireEmployee from './hireEmployee';
 import ForgotPassword from "./forgotPassword";
 import CreateNewPassword from "./createNewPassword";
-
 export default function Routing(){
     return(
     <BrowserRouter>
