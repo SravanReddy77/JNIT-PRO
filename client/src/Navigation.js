@@ -7,10 +7,11 @@ const NavbarComponent = () => {
     const toggleNavbar = () => setCollapsed(!collapsed);
     return (
         <div>
+            <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80}
+                                                  alt="JnitLogo"></img></a>
             <Navbar color="faded" dark>
                 <NavbarBrand href="/" className="me-0">
-                    <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80}
-                                                          alt="JnitLogo"></img></a>
+
                 </NavbarBrand>
                 <NavbarBrand className="me-auto">
                 <NavbarToggler onClick={toggleNavbar}/>
