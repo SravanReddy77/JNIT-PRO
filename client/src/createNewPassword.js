@@ -1,48 +1,32 @@
 import React from "react";
 import JnitLogo from "./JNIT Logo.svg";
 import "./login.css";
-import {redirect} from "react-router";
+import NavbarComponent from "./Navigation";
 export default function CreateNewPassword(){
-    function handleSubmit(){
-        redirect("./")
-    }
 
         return (
             <div>
-                <div className="header">
-                    <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80} alt="JnitLogo"></img></a>
-                    <nav>
-                        <ul>
-                            <li><a className="nav-btn" href="#home">Home</a></li>
-                            <li><a className="nav-btn" href="#about">About</a></li>
-                            <li><a className="nav-btn" href="#contact">Contact</a></li>
-                        </ul>
-                    </nav>
-                </div>
-                <div className="image">
+            <NavbarComponent/>
+                 <div className="login">
                     <a href="http://localhost:3000/">
                         <img src={JnitLogo} className="center" alt="JnitLogo"></img>
                     </a>
-                </div>
-                <div className="Auth-form-container-createNewpassword">
-                    <form className="Auth-form">
-                        <div className="Auth-form-content">
-                            <h3 className="Auth-form-title">Create New Password</h3>
+                     <h2>Create New Password</h2>
+                    <form className="login-form">
+                        <div className="textbox">
                             <p className="Auth-form-confirm" align="center"><span className="greenText">OTP is Verified!</span></p>
-                            <div className="form-group mt-3">
-                                <label>Enter Password</label>
+                                <label className="custom-label">Enter Password</label>
                                 <input
                                     type="password"
-                                    className="form-control mt-1"
+                                    className="form-control mt-2"
                                     placeholder="Enter Password"
                                 />
-                                <label>Reenter Password</label>
+                                <label className="custom-label">Reenter Password</label>
                                 <input
                                     type="password"
-                                    className="form-control mt-1"
+                                    className="form-control mt-2"
                                     placeholder="Reenter Password"
                                 />
-                            </div>
                             <form className="d-grid gap-2 mt-3" action="./">
                             <div className="d-grid gap-2 mt-3">
                                 <button type="submit" className="btn btn-primary"  >
@@ -52,7 +36,7 @@ export default function CreateNewPassword(){
                             </form>
                         </div>
                     </form>
-                </div>
+                 </div>
             </div>
 
         )
