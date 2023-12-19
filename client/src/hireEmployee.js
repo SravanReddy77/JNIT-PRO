@@ -36,13 +36,11 @@ export default function HireEmployee() {
     };
 
     const addEmployee = async () => {
-        console.log("11111111111111111");
         const { name, role, details } = newEmployee;
 
         if (name && role && details) {
-            console.log("222222222222222");
             try {
-                const response = await axios.post("http://localhost:8080/saveRegister", { name, role, details });
+                const response = await axios.post("http://localhost:8080/saveConsultants", { name, role, details });
                 const updatedEmployees = [...employees, response.data];
                 setEmployees(updatedEmployees);
                 closeAddEmployeeModal();
@@ -62,7 +60,6 @@ export default function HireEmployee() {
             </button>
             {employees.map((employee, index) => (
                 <div key={index} className="employee-box">
-                    <img src={employee} alt={`Employee ${index + 1}`} className="employee-image"></img>
                     <h2>{employee.name}</h2>
                     <p>{employee.role}</p>
                     <p>Details: {employee.details}</p>
