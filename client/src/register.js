@@ -77,6 +77,7 @@ const registerData = () => {
   if (authMode === "signin") {
     return (
         <div>
+        <NavbarComponent/>
           <div className="login">
               <div className="image">
                 <a href="http://localhost:3000/">
