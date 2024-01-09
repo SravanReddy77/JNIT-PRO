@@ -6,10 +6,10 @@ import axios from "axios";
 
 export default function HireEmployee() {
     const [employees, setEmployees] = useState([
-        { name: "John Hooper", role: "Sr.Full Stack Java Developer", details: "1500$/month, Client: Neilson(Chicago), USA" },
+/*        { name: "John Hooper", role: "Sr.Full Stack Java Developer", details: "1500$/month, Client: Neilson(Chicago), USA" },
         { name: "James Richardson", role: "Python", details: "3000$/month, Client: Macys(Texas), India" },
         { name: "Kinney William", role: "Devops", details: "5000$/month, Client: Amazon(Boston), USA" },
-        { name: "Robert Tony", role: "AWS", details: "1300$/month, Client: Costco(NewYork), China" },
+        { name: "Robert Tony", role: "AWS", details: "1300$/month, Client: Costco(NewYork), China" },*/
     ]);
 
     const [newEmployee, setNewEmployee] = useState({

@@ -38,6 +38,7 @@ const NavbarComponent = () => {
                     </Collapse></NavbarBrand>
             </Navbar>
         </div>
+
     )
 }
 export default NavbarComponent;
