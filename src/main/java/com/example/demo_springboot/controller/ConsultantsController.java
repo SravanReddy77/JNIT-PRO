@@ -15,12 +15,14 @@ public class ConsultantsController {
     private ConsultantsRepository consultantsRepository;
 
 
+    @CrossOrigin("http://localhost:3000")
     @PostMapping("/saveConsultants")
     public Consultants saveRegister(@RequestBody Consultants consultants) {
 
         return consultantsRepository.save(consultants);
     }
 
+    @CrossOrigin("http://localhost:3000")
     @GetMapping("/getConsultants")
     public List<Consultants> getRegister() {
         return consultantsRepository.findAll();

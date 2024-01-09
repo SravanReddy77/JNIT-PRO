@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./login.css"
 import JnitLogo from './JNIT Logo.svg';
-import { redirect } from "react-router";
 import axios from "axios";
 import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink} from "reactstrap";
 
@@ -66,10 +65,10 @@ const registerData = () => {
       console.log(err);
     });
 }
-  function handleSubmit(){
-  console.log("Hi")
-    redirect("./hireEmployee")
-  }
+/*  async function handleSubmit(){
+  console.log("11111111111111111111111111111111")
+   await redirect("./hireEmployee")
+  }*/
 
   const changeAuthMode = () => {
     setAuthMode(authMode === "signin" ? "signup" : "signin")
@@ -143,7 +142,7 @@ const registerData = () => {
                       />
                   </div>
                   <form className="d-grid gap-2 mt-3">
-                      <button type="submit" className="btn btn-primary" onClick={handleSubmit}>
+                      <button type="submit" className="btn btn-primary" formAction="./hireEmployee" >
                         Login
                       </button>
                   </form>
@@ -271,7 +270,6 @@ const registerData = () => {
 
             </div>
           </form>
-          {/* </div>*/}
         </div>
       </div>
   )

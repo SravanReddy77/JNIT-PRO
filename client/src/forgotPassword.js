@@ -2,7 +2,6 @@ import React, {useState} from "react";
 import JnitLogo from "./JNIT Logo.svg";
 import "./login.css";
 import {redirect} from "react-router";
-import NavbarComponent from "./Navigation";
 import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink} from "reactstrap";
 
 export default function ForgotPassword(){
