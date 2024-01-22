@@ -76,9 +76,7 @@ export default function HireEmployee() {
     };
     const fetchConsultants = async () => {
         try {
-            console.log("11111111111111")
             const response = await axios.get("http://localhost:8080/getConsultants");
-            console.log("2222222222222222222222", response)
             setConsultants(response.data);
             console.log('Consultants State:', consultants);
         } catch (error) {
