@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./login.css"
 import JnitLogo from './JNIT Logo.svg';
 import axios from "axios";
-import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink} from "reactstrap";
+import NavbarComponent from "./Navigation";
 
 
 
@@ -69,50 +69,18 @@ const registerData = () => {
   console.log("11111111111111111111111111111111")
    await redirect("./hireEmployee")
   }*/
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  setTimeout(() => {
+    setIsLoggedIn(true);
+  }, 2000);
 
   const changeAuthMode = () => {
     setAuthMode(authMode === "signin" ? "signup" : "signin")
   }
-  const [collapsed, setCollapsed] = useState(true);
-  const toggleNavbar = () => setCollapsed(!collapsed);
-
   if (authMode === "signin") {
     return (
         <div>
- {/*       <NavbarComponent/>*/}
-          <div>
-            <Navbar color="faded" dark>
-              <NavbarBrand href="/" className="me-0">
-              </NavbarBrand>
-              <NavbarBrand className="me-auto">
-                <NavbarToggler onClick={toggleNavbar}/>
-                  <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80}
-                                                    alt="JnitLogo"></img></a>
-                  <Collapse isOpen={!collapsed} navbar>
-                    <Nav navbar>
-                      <NavItem>
-                        <NavLink href="./">
-                          Home
-                        </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="./hireEmployee">
-                        Consultants
-                      </NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="/components/">Contact Us</NavLink>
-                    </NavItem>
-                    <NavItem>
-                      <NavLink href="./">
-                        About
-                      </NavLink>
-                    </NavItem>
-                </Nav>
-              </Collapse></NavbarBrand>
-            </Navbar>
-          </div>
-
+         <NavbarComponent isLoggedIn={isLoggedIn}/>
           <div className="login">
               <div className="image">
                 <a href="http://localhost:3000/">
@@ -142,7 +110,7 @@ const registerData = () => {
                       />
                   </div>
                   <form className="d-grid gap-2 mt-3">
-                      <button type="submit" className="btn btn-primary" formAction="./hireEmployee" >
+                      <button type="submit" className="btn btn-primary" formAction="./landing" >
                         Login
                       </button>
                   </form>
@@ -165,39 +133,7 @@ const registerData = () => {
 
   return (
       <div>
-        <div>
-          <Navbar color="faded" dark>
-            <NavbarBrand href="/" className="me-0">
-            </NavbarBrand>
-            <NavbarBrand className="me-auto">
-              <NavbarToggler onClick={toggleNavbar}/>
-              <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80}
-                                                    alt="JnitLogo"></img></a>
-              <Collapse isOpen={!collapsed} navbar>
-                <Nav navbar>
-                  <NavItem>
-                    <NavLink href="./">
-                      Home
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="./hireEmployee">
-                     Login In
-                    </NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="/components/">Contact Us</NavLink>
-                  </NavItem>
-                  <NavItem>
-                    <NavLink href="./">
-                      About
-                    </NavLink>
-                  </NavItem>
-                </Nav>
-              </Collapse></NavbarBrand>
-          </Navbar>
-        </div>
-
+        <NavbarComponent />
         <div className="login">
           <a href="http://localhost:3000/">
             <img src={JnitLogo} className="center" alt="JnitLogo"></img>
@@ -262,7 +198,7 @@ const registerData = () => {
                   <div className="custom-label">
                     Already registered?{" "}
                     <span className="link-primary" onClick={changeAuthMode}>
-              Login In
+              Login
             </span>
                   </div>
                 </div>
