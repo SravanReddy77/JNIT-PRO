@@ -2,54 +2,22 @@ import React, {useState} from "react";
 import JnitLogo from "./JNIT Logo.svg";
 import "./login.css";
 import {redirect} from "react-router";
-import {Collapse, Nav, Navbar, NavbarBrand, NavbarToggler, NavItem, NavLink} from "reactstrap";
+import NavbarComponent from "./Navigation";
+
 
 export default function ForgotPassword(){
     let [authMode, setAuthMode] = useState("forgotPassword")
     function handleSubmit(){
         redirect("./createNewPassword")
     }
-
+    const isLoggedIn = false;
     const changePassMode = () => {
         setAuthMode(authMode === "forgotPassword" ? "enterOTP" : "forgotPassword")
     }
-    const [collapsed, setCollapsed] = useState(true);
-    const toggleNavbar = () => setCollapsed(!collapsed);
         if (authMode === "forgotPassword") {
         return (
             <div>
-                <div>
-                    <Navbar color="faded" dark>
-                        <NavbarBrand href="/" className="me-0">
-                        </NavbarBrand>
-                        <NavbarBrand className="me-auto">
-                            <NavbarToggler onClick={toggleNavbar}/>
-                            <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80}
-                                                                  alt="JnitLogo"></img></a>
-                            <Collapse isOpen={!collapsed} navbar>
-                                <Nav navbar>
-                                    <NavItem>
-                                        <NavLink href="./">
-                                            Home
-                                        </NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink href="./hireEmployee">
-                                            Login In
-                                        </NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink href="/components/">Contact Us</NavLink>
-                                    </NavItem>
-                                    <NavItem>
-                                        <NavLink href="./">
-                                            About
-                                        </NavLink>
-                                    </NavItem>
-                                </Nav>
-                            </Collapse></NavbarBrand>
-                    </Navbar>
-                </div>
+                <NavbarComponent isLoggedIn={isLoggedIn}/>
                 <div className="login">
                     <a href="http://localhost:3000/">
                         <img src={JnitLogo} className="center" alt="JnitLogo"></img>
@@ -82,39 +50,7 @@ export default function ForgotPassword(){
         }
     return (
         <div>
-            <div>
-                <Navbar color="faded" dark>
-                    <NavbarBrand href="/" className="me-0">
-                    </NavbarBrand>
-                    <NavbarBrand className="me-auto">
-                        <NavbarToggler onClick={toggleNavbar}/>
-                        <a href="http://localhost:3000/"><img src={JnitLogo} height={40} width={80}
-                                                              alt="JnitLogo"></img></a>
-                        <Collapse isOpen={!collapsed} navbar>
-                            <Nav navbar>
-                                <NavItem>
-                                    <NavLink href="./">
-                                        Home
-                                    </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink href="./hireEmployee">
-                                        Login In
-                                    </NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink href="/components/">Contact Us</NavLink>
-                                </NavItem>
-                                <NavItem>
-                                    <NavLink href="./">
-                                        About
-                                    </NavLink>
-                                </NavItem>
-                            </Nav>
-                        </Collapse></NavbarBrand>
-                </Navbar>
-            </div>
-
+            <NavbarComponent isLoggedIn={isLoggedIn}/>
             <div className="login">
                 <a href="http://localhost:3000/">
                     <img src={JnitLogo} className="center" alt="JnitLogo"></img>

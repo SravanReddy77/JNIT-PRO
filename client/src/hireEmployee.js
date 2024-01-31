@@ -90,9 +90,14 @@ export default function HireEmployee() {
         fetchConsultants();
     }, []);
 
+    const [isLoggedIn, setIsLoggedIn] = useState(true);
+    setTimeout(() => {
+        setIsLoggedIn(true);
+    }, 2000);
+
     return (
         <div>
-            <NavbarComponent />
+            <NavbarComponent isLoggedIn={isLoggedIn}/>
             <button type="button" className="add-employee-btn" onClick={openAddEmployeeModal}>
                 Add Employee
             </button>
