@@ -1,6 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Login from './login';
+import { BrowserRouter as Router, Route, Routes  } from 'react-router-dom';
 import Home from './home';
 import Register from './register';
 import LandingPage from './landingPage';
@@ -9,18 +8,16 @@ import ForgotPassword from './forgotPassword';
 import CreateNewPassword from './createNewPassword';
 export default function Routing(){
     return (
-        <BrowserRouter>
+        <Router>
             <Routes>
-                <Route path="/" element={<Home/>}/>
-                <Route path="/register" element={<Register/>}/>
-                <Route path="/landing" element={<LandingPage/>}/>
-                <Route path="/forgotPassword" element={<ForgotPassword/>}/>
-                <Route path="/hireEmployee" element={<HireEmployee/>}/>
-                <Route path="/createNewPassword" element={<CreateNewPassword/>}/>
-
-
+                    <Route path="/" element={<Home />} />
+                    <Route path="/register" element={<Register/>}/>
+                    <Route path="/landing" element={<LandingPage/>}/>
+                    <Route path="/forgotPassword" element={<ForgotPassword/>}/>
+                    <Route path="/hireEmployee" element={<HireEmployee/>}/>
+                    <Route path="/createNewPassword" element={<CreateNewPassword/>}/>
             </Routes>
-        </BrowserRouter>
+        </Router>
 
     );
 }
